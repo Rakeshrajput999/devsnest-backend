@@ -178,6 +178,7 @@ database{test}=>table{person 2}
           - rest api uses json
           - node secure and performant 
           - 
+          - node js has access to system 
           
 express---
           version : mazor change , normal change ,bug fixing,
