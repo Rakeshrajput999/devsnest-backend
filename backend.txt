@@ -1,0 +1,210 @@
+sudo apt-get install redis-server
+sudo apt-get install redis-tool
+sudo service redis-server start
+sudo service redis-server restart
+redis -cli
+ -------------------------------
+ 
+ 
+ usage redis
+ 
+ 
+ set key value
+ get key
+ ttl key 
+ keys *
+ flushall
+ exists key
+ expire key time 
+ setex key time value
+ 
+ for arrays 
+ - lpush array value
+ - rpush array value 
+ - lrange array start stop
+ - lpop array
+ - rpop array 
+ 
+ 
+ 
+ for Sets 
+ - sadd myset value 
+ - smembers myset
+ 
+ 
+ for object/hash
+ 
+ hset key field value 
+ hget key field 
+ hdel key field
+ hexits key field
+ hset obj arr "[1,2,3]" stringify array
+ 
+ 
+ postgres and relational database
+  sql- structured quary language 
+
+ 
+ to start postgresql
+ 
+ sudo -i -u postgres              -> change user  to postgres
+ psql                             -> start psql cli
+ 
+ 
+ \l show data base 
+ \d show table
+
+to create data base - CREATE DATABASE test;
+
+ to grant privilages - grant all privilages on database test to postgres
+
+ \c database_name 
+
+to delete database - drop database test; it is very dengerous comand 
+
+
+to create table -
+CREATE TABLE table_name (
+   cloumnname +data_type+constraint-if any
+)
+
+EXAAMPLE=>
+CREATE TABLE person (id int,
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+gender VARCHAR(6),
+date_of_birth TIMESTAMP);
+
+example 2 with constraint
+CREATE TABLE person1 (id int PRIMARY KEY,
+first_name VARCHAR(50) NOT NULL,
+last_name VARCHAR(50) NOT NULL,
+gender VARCHAR(6) NOT NULL,
+date_of_birth TIME NOT NULL);
+
+ \d to visualise table in aparticular database 
+ \d table-name to show column of table 
+
+
+insert into table -----
+database{test}=>table{person 2}
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+   how internet works
+   database to -user
+      - data center -> setalite -> shortest path algo used -> 
+       google.com
+       ip address decided by network provider 
+       ip address varried 
+       physical address fixed 
+       
+       dns server 
+       
+       
+       protoclols -
+                   tcp/ip      - transport data 
+                   http/https  - web access
+                   rtp         - live video 
+                                 streaming 
+   
+   api- application programming interface
+   to establish connection between two system or software product
+   how api works ----
+     
+      webapp in browser <---request /respond---> internet<> api <_> webserver <-> database  
+      api 3 types -
+      private-   unly use for intrnally
+      partner - running in abetween group
+      public - available for public
+      
+      
+      vpn-
+      vpn takes ip address and give their own ip address for your request and forword it  to 
+      
+      
+      rest api- representable state transfer 
+                it is also aset of rule how to handle request and responce 
+                
+                
+                question- list all api?
+                
+                
+                
+                simple  and standard
+                scalable and stateless(identiy less)
+                ----uses json---
+                structure less
+                high performance ,can be cached
+                
+                
+                
+                create -----> post api
+                read   -----> get api
+                update ------> put api
+                delete ------> delete api
+                
+                
+                
+                request 
+                
+                header --
+                param/body---
+                operation ---
+                end point----
+                
+                
+                responce 
+                
+                header---
+                json----
+                
+   node.js
+          node js helps to  create api 
+          
+          written in js 
+          js is single treaded  -->event loop
+          easy way to create scalable rest api
+          
+          - huge community 
+          - rest api uses json
+          - node secure and performant 
+          - 
+          
+express---
+          version : mazor change , normal change ,bug fixing,
+      security performance edge cases handle required
+                            
+          
+          
+                
+                
+                
+                
+                
+                
+                
+                
+      
+      
+      
+      
+                   
+       
+       
+       
+       
+                       
+ 
+ 
+ 
+ 
+ 
