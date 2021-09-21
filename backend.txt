@@ -178,8 +178,25 @@ database{test}=>table{person 2}
           - rest api uses json
           - node secure and performant 
           - 
-          - node js has access to system 
+          - node js has access to system
+
+
+event loop--
+js is a single-threaded
+        non-blocking
+        asynchronous
+        concurrent 
+        language 
+
+    i have call stack 
+    an event loop 
+    a callback queue
+    some other apies
+    and stuff
+    
+
           
+
 express---
           version : mazor change , normal change ,bug fixing,
       security performance edge cases handle required
@@ -187,11 +204,13 @@ express---
           
           
                 
+system port ---
+124 below      
                 
                 
-                
-                
-                
+       day11
+       use          
+              sequelize to connect with database 
                 
                 
       

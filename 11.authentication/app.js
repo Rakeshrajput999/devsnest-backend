@@ -18,6 +18,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+require("./database/mongodb")
+
 app.use(session({
   store: new RedisStore({client:redisClient}),
   secret: "secret@#$#332",
@@ -29,6 +32,8 @@ app.use(session({
     maxAge: 1000*60*10
   }
 }))
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 

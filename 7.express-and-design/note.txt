@@ -1,0 +1,20 @@
+package.json  ye btata hain ki ye node.js ka project hain 
+
+
+
+{
+  "name": "7.express-and-design",
+  "version": "1.          0.                 0", 
+    mazor version  normal changes         normal bug fixing 
+   large changes 
+
+
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rakesh",
+  "license": "ISC"
+}
+

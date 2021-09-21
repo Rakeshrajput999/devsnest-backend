@@ -10,13 +10,13 @@ sequelize.sync()
 
 
 
-// const auth = async () =>{
-//    try {
-//        await sequelize.authenticate()
-//        console.log("connection esteblished");
-//    }catch {(err)=>{
-//        console.log("unable to connect");
-//    }
-// }}
-// auth()
+const auth = async () =>{
+   try {
+       await sequelize.authenticate()
+       console.log("connection esteblished");
+   }catch {(err)=>{
+       console.log("unable to connect");
+   }
+}}
+auth()
 module.exports = sequelize

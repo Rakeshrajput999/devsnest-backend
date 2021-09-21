@@ -5,7 +5,7 @@
 
 */
 const bcrypt = require("bcrypt");
-const User = require("../models/user.js")
+const User = require("../models/mongo.js")
 
 
 

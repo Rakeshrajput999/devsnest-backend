@@ -33,3 +33,6 @@ const fs =require("fs")
 
 // // to delete file
 // fs.unlinkSync("demofolder/demo2.txt")
+
+// to remove directory 
+fs. rmdirSync("demofolder")
