@@ -3,12 +3,16 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-////////////////////////////////////////////////////////
-require("./database/index");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-const { redisClient, RedisStore, session } = require("../12.redis/database/redisdb.js");
+
+// redis database 
+const { redisClient,RedisStore,session} = require("./database/redis")
+
+// mongodb.database
+require("./database/mongo") 
+
 var app = express();
 
 // view engine setup
@@ -21,25 +25,21 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-////////////////////////////////////////////////////////////
-
-
-
 app.use(session({
-  store: new RedisStore({client:redisClient}),
-  secret: "secret@#$#332",
-  resave: false,
-  saveUninitialized:false ,
+  store: new RedisStore({client: redisClient}),
+  secret: "seret12@#@!#$",
+  resave:false,
+  saveUninitialized:false,
   cookie:{
-    secure: false ,
-    httpOnly: false,
-    maxAge: 1000*60*10
+    secure:false,
+    httpOnly:false,
+    maxAge:100*60*10
   }
 }))
-/////////////////////////////////////////////////////////////
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,4 @@
+configuration management
+.env file -  use to set environment variable 
+
+NEED TO INSTALL DOTENV VIE NPM

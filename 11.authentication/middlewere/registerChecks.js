@@ -2,7 +2,7 @@ const {
   emailValidate,
   passwordValidate,
 } = require("../utils/emailValidate.js");
-const registerInitialChecks = (res, req, next) => {
+const registerInitialChecks = (req, res, next) => {
   const { email, password, confirmPassword } = res.body;
   if (
     typeof email === "string" &&

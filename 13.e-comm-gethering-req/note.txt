@@ -1,0 +1,63 @@
+according to traffic use technology 
+
+
+like for low traffic site use wordpress wix php cost effective 
+
+
+for high traffic like 1lac user per second
+
+
+for highest traffic use golang 
+
+
+api call requirement gathering 
+
+making different api for all thing is bed prectice 
+
+
+use minimise number of api 
+   helpful tech graphql
+
+
+                url doesnt change in graphql
+
+make a description  for api link 
+show limited data 
+use vertualization 
+
+
+read- react vertualization
+
+security - use encription 
+
+agile methodology -
+                 water fall model - old   pura aplication  banne k baad lounch karna
+                  requirement gethering -> software design ->implementaion -> varification -> maintainance 
+                  need heavily documentation 
+                  no customer colleboration
+
+
+
+what is agile -
+
+
+
+values of agile 
+        individual and interaction 
+        working software 
+        customre colleburation
+        responding to change 
+
+
+scrum-  planning  backlog 
+  team decided daily scrum section devision
+
+         
+  jira software 
+
+  hld psheado code 
+               
+
+
+
+
