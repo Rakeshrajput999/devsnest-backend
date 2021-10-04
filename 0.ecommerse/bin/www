@@ -5,15 +5,16 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('11.auth2:server');
+var debug = require('debug')('0.ecommerse:server');
 var http = require('http');
-var {PORT} = require("../config")
+var { PORT } = require("../config")
 
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+// var port = normalizePort(process.env.PORT || '3000');   change due to env file
+var port = normalizePort(process.env.PORT || "3000");
 app.set('port', port);
 
 /**

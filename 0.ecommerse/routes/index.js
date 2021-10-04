@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var registerchecks = require("../middlewares/registerchecks")
-var register =require("../controller/register")
+var {register,registerSuperAdmin} =require("../controller/register");
+const check = require('../middlewares/CheckSuperAdmin');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -33,5 +34,6 @@ router.get("/test", function (req, res, next) {
  */
 // to post 
 router.post("/register",registerchecks,register )
-
+router.post("/register-super-admin", registerchecks,check,registerSuperAdmin);
+router.get ("/",)
 module.exports = router;

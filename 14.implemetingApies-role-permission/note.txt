@@ -1,4 +1,33 @@
 configuration management
 .env file -  use to set environment variable 
+STORE  SECRETS 
 
 NEED TO INSTALL DOTENV VIE NPM
+ADD THIS FORMAT IN GITEGNORE 
+
+.env 
+
+PORT =5000
+
+then make afolder config 
+    index 
+       require("dotenv").config()
+
+module.exports={
+    PORT:process.env.PORT
+}
+
+
+
+
+then in folder bin www
+import this and make some changes
+
+
+passport --
+
+need to install passport-jwt passport 
+
+generally it usee for google authentication and facebook authentication or many more 
+          
+

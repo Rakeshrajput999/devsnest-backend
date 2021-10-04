@@ -3,12 +3,12 @@
  * 
  * then this code is export to model section where we create table structure 
  */
-
+const {sequelize_database,sequelize_dialect,sequelize_host,sequelize_password,sequelize_username} =require("../config/index")
 
 const { Sequelize } = require("sequelize");
 const User = require("../models/User")
 
-const seq = new Sequelize("postgres", "postgres", "12345", {host :"localhost",dialect:"postgres"});
+const seq = new Sequelize(sequelize_database,sequelize_username,sequelize_password, {host :sequelize_host,dialect:sequelize_dialect});
 
 // seq.sync({force:true,logging:true})
 (async()=>{
